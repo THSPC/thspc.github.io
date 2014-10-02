@@ -97,7 +97,7 @@ html, body {
 #infoContainer{
 	color: #34495e;
 	font-family: 'Montserrat', sans-serif;
-	height: 50%;
+	min-height: 50%;
 	border-top: 3px solid #F89406;
 	margin: 0 auto;
 	text-align: center;

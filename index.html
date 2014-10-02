@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>THSPC</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,6 +18,8 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+          <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.3.0.min.js"></script>
+        <script src ="js/main.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -49,15 +51,15 @@
 
         <br /><br />
         <br />
-        <form id = "signUp" class = "animated">
+        <div id = "signUp" class = "animated">
         <span style = "font-size: 25px" class = "mainText"> Sign Up Now </span><br /><br />
             <input type = "text" id = "name" placeholder = "Full Name" class = "textField"> 
             <input type = "text" id = "email" placeholder  = "Email Address" class = "textField"><br />
             <button id = "buttonSignUp" onclick = "signUp()">Submit!</button>
-        </form>
+        </div>
         <br /><br />
 
-        <span style = "font-size: 15px" class = "mainText">Scroll for more info </span>
+        <span style = "font-size: 15px" class = "mainText" id= "little">Scroll for more info </span>
         <br /><br />
         <a href = "#infoContainer"><span class = "glyphicon glyphicon-chevron-down" id = "downArrow" ></span></a>
     </div>
@@ -68,6 +70,8 @@
         <h3> Check your email for meeting reminders and for the date of the first meeting. </h3>
         <h3> Meetings are held in room 145. </h3>
         <h3> Laptops are limited, so bring your own if possible </h3>
+        <h2> Inquiries? </h2>
+        <h3> Contact: tenaflyprogramming@gmail.com </h3>
     </div>
 
 
@@ -86,9 +90,11 @@
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
         $('document').ready(function(){
-            // $('#mainContent1').hide().delay(1000).fadeIn('slow').addClass('zoomIn');
-            // $('#mainContent2').hide().delay(2500).fadeIn('slow').addClass('tada');
-           //  $('#signUp').hide().delay(3000).fadeIn('slow').addClass('bounceInDown');
+             $('#mainContent1').hide().delay(1000).fadeIn('slow').addClass('zoomIn');
+             $('#mainContent2').hide().delay(2500).fadeIn('slow').addClass('tada');
+            $('#signUp').hide().delay(3000).fadeIn('slow').addClass('bounceInDown');
+            $('#downArrow').hide().delay(3000).fadeIn('slow').addClass('bounceInDown');
+            $('#little').hide().delay(3000).fadeIn('slow').addClass('bounceInDown');
 
             $('a[href*=#]').click(function() {
                 if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
