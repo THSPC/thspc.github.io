@@ -4,7 +4,19 @@
    Author's custom styles
    ========================================================================== */
 
-html {
+html, body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@font-face {
+    font-family: 'Neutron';
+    src: url('../fonts/NEUTRON.otf');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 .top-header {
@@ -14,4 +26,96 @@ html {
 
 .top-header .code-tagline {
 	font-family: "Courier New", Courier, monospace;
+}
+
+#mainContainer{
+	  width: 100%;
+	  min-height: 100%;
+	  background: url('../img/background.jpg') no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  margin: 0 auto;
+	  text-align: center;
+	  padding-top: 100px;
+	  padding-bottom: 50px;
+
+}
+
+
+.mainText{
+
+	font-family: 'Michroma', sans-serif;
+	color: #D2D7D3;
+	font-size: 35px;
+	padding: 20px;
+	text-shadow: 1px 1px black;
+}
+
+.textField{
+	border-radius: 5px;
+	border: 1px solid #3FC380;
+	padding: 5px;
+	margin: 5px;
+
+}
+
+#buttonSignUp{
+	border-radius: 10px;
+	background-color: #3FC380;
+	color: white;
+	border: 1px solid #D2D7D3;
+	font-size: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 10px;
+	text-shadow: 1px 1px black;
+
+
+}
+
+
+
+#buttonSignUp:hover{
+	background-color: #F89406;
+}
+
+#downArrow{
+	font-size: 25px;
+	color: #D2D7D3;
+
+}
+
+#downArrow:hover{
+	color: #F89406;
+	cursor: pointer;
+}
+
+#infoContainer{
+	color: #34495e;
+	font-family: 'Montserrat', sans-serif;
+	height: 50%;
+	border-top: 3px solid #F89406;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 20px;
+}
+
+
+
+@media (max-height: 719px) {
+  .mainText {
+    font-size: 25px;
+  }
+
+
+}
+
+@media (max-height: 600px){
+#mainContainer{
+  	padding-top: 0px;
+  }
 }
